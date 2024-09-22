@@ -1,7 +1,6 @@
 import React from "react";
 import {
   AboutContent,
-  AboutImage,
   AboutSection,
   AboutTextContainer,
   AboutTitle,
@@ -21,9 +20,8 @@ const About: React.FC = () => {
         </AboutContent>
       </AboutTextContainer>
       <div>
-      <i className="icon about"/>
+        <i className="icon about" />
       </div>
-
     </AboutSection>
   );
 };

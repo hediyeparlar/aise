@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
-export const AboutSection = styled.section`
+export const ExperienceSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   padding: 0 147px;
-  margin-top: 64;
+  margin-top: 64px;
+  margin-bottom: 64px;
 `;
 
-export const AboutTextContainer = styled.div`
+export const ExperienceTextContainer = styled.div`
   margin-left: 20px;
-  max-width: 45%;
+  max-width: 55%;
 `;
 
-export const AboutTitle = styled.h2`
+export const ExperienceTitle = styled.h2`
   font-size: 48px;
   font-weight: lighter;
   line-height: 65px;
@@ -23,14 +24,15 @@ export const AboutTitle = styled.h2`
   color: #3c3b40;
 `;
 
-export const AboutContent = styled.p`
+export const Content = styled.p`
   font-size: 18px;
   font-weight: lighter;
   line-height: 30px;
   color: #77777a;
+  width: 92%;
 `;
 
-export const AboutImage = styled.img`
+export const ExperienceImage = styled.img`
   max-width: 40%;
   height: auto;
 `;

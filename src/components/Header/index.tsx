@@ -1,7 +1,20 @@
 import React from "react";
-import { HeaderContainer, HeaderContent, IconContainer, Title, TitleContainer } from "./styled";
+import {
+  HeaderContainer,
+  HeaderContent,
+  IconContainer,
+  Title,
+  TitleContainer,
+} from "./styled";
 
 const Header: React.FC = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <HeaderContainer>
       <HeaderContent>
@@ -9,10 +22,10 @@ const Header: React.FC = () => {
           <i className="icon logo" />
         </IconContainer>
         <TitleContainer>
-          <Title>Hakkımızda</Title>
-          <Title>Modüller</Title>
-          <Title>Modeller</Title>
-          <Title>İletişim</Title>
+          <Title onClick={() => scrollToSection("about")}>Hakkımızda</Title>
+          <Title onClick={() => scrollToSection("products")}>Modüller</Title>
+          <Title onClick={() => scrollToSection("experience")}>Modeller</Title>
+          <Title onClick={() => scrollToSection("contact")}>İletişim</Title>
         </TitleContainer>
       </HeaderContent>
     </HeaderContainer>

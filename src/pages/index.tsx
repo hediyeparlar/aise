@@ -1,12 +1,23 @@
-import About from "@/components/About";
 import React from "react";
+import About from "@/components/About";
+import ExperienceContent from "@/components/ExperienceContent";
+import Products from "@/components/Products";
 
 const Home: React.FC = () => {
   return (
-    <div style={{ padding: "0 147px", marginTop: 64 }}>
-      <About />
+    <div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="products">
+        <Products />
+      </div>
+      <div id="experience">
+        <ExperienceContent />
+      </div>
+      <div id="contact">deneme</div>
     </div>
   );
 };
-("");
+
 export default Home;
