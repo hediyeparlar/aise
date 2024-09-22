@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Visby CF";
+  src: url("/fonts/visbycf.woff2") format("woff2"),
+    url("/fonts/visbycf.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Visby CF', sans-serif;
+    margin: 0px;
+  }
+  
+  .icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  .icon.logo {
+    background-image: url("../../public/icons/aise_logo.svg");
+    width: 147px;
+    height: 59px;
+  } 
+  .icon.about {
+    background-image: url("../../public/icons/about-image.svg");
+    width: 424px;
+    height: 344px;
+  }
