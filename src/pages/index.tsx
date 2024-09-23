@@ -2,6 +2,7 @@ import React from "react";
 import About from "@/components/About";
 import ExperienceContent from "@/components/ExperienceContent";
 import Products from "@/components/Products";
+import Banner from "@/components/Banner";
 
 const Home: React.FC = () => {
   return (
@@ -15,7 +16,9 @@ const Home: React.FC = () => {
       <div id="experience">
         <ExperienceContent />
       </div>
-      <div id="contact">deneme</div>
+      <div>
+        <Banner />
+      </div>
     </div>
   );
 };
